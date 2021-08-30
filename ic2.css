@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: slategray;
-  color: #fff;
 }
 
 .container {
@@ -13,20 +12,26 @@ body {
 }
 
 .container > div {
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
 }
 
-.empty,
-.layout-header,
-.lines-header {
+#empty,
+#layout-header,
+#lines-header {
   grid-row: span 3;
+  color: #fff;
 }
 
-.layout-header {
+#empty {
+  background-color: transparent;
+}
+
+#layout-header {
   grid-column: span 2;
   background-color: #ff007f;
 }
 
-.lines-header {
+#lines-header {
   background-color: mediumpurple;
 }
