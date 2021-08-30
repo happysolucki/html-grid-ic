@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: slategray;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px;
+  grid-gap: 15px;
+}
+
+.container > div {
+  padding: 0.25rem 0.5rem;
+}
+
+.empty,
+.layout-header,
+.lines-header {
+  grid-row: span 3;
+}
+
+.layout-header {
+  grid-column: span 2;
+  background-color: #ff007f;
+}
+
+.lines-header {
+  background-color: mediumpurple;
+}

@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: slategray;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.container > div {
+  background-color: skyblue;
+  width: 200px;
+  height: 200px;
+  border: 7px solid black;
+  border-radius: 5px;
+}
